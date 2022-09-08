@@ -1,0 +1,223 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: orangered;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* утиліти */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+li,ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  20%{
+    transform: translateY(-6px);
+  }
+  40%{
+    transform: translateY(0px);
+  }
+  60%{
+    transform: translateY(-2px);
+  }
+  80%{
+    transform: translateY(0px);
+  }
+  
+}
+
+.main-title{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  text-align: center;
+  color:#f4f4f4;
+}
+
+.search-form{
+  display: flex;
+  justify-content: center;
+  margin:20px 20px;
+}
+
+.card-title{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-subtitle{
+  margin-top: 5px;
+  text-align: center;
+}
+
+.card-text{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-image{
+  height: 180px;
+  margin: 0 auto;
+}
+
+.pokemog-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  transition-property: transform, background-color, opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0);
+}
+
+#closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.card-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.submitBtn{
+  background-color: white;
+  padding: 10px 20px;
+  border:none;
+  color:orangered;
+  border-radius: 3px;
+  transition: transform 100ms;
+}
+
+.submitBtn:hover{
+  cursor: pointer;
+  background-color: rgb(65, 65, 165);
+  color:orangered;
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 2px darkred;
+}
+
+.input {
+    margin-right: 10;
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.6) ;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.modal-btn{
+  background-color: orangered;
+  padding: 10px 20px;
+  border:none;
+  color:white;
+  border-radius: 3px;
+  transition: transform 100ms;
+}
+
+.modal-btn:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 2px darkred;
+}
+
+
+.card-btn{
+  display: block;
+  margin: 0 auto;
+  background-color: orangered;
+  padding: 10px 20px;
+  border:none;
+  color:white;
+  border-radius: 3px;
+  transition: transform 100ms;
+}
+
+.card-btn:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 2px darkred;
+}
